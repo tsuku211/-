@@ -1,0 +1,25 @@
+@use '../config/' as *;
+
+.hero {
+
+    &-text {
+
+        p {
+
+        }
+
+        span {
+
+        }
+    }
+}
+
+.hero-list {
+
+    &-item {
+
+        span {
+
+        }
+    }
+}
