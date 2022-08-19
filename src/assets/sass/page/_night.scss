@@ -1,0 +1,53 @@
+@use '../config/' as *;
+@use './morning';
+
+.night {
+    position: relative;
+    padding-bottom: 47px;
+    margin-top: 8vw;
+    background-color: #0F338C;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        width: 100%;
+        height: 15vw;
+        background: url(../img/night-wave.png) no-repeat center center / cover;
+    }
+}
+
+.night-bg-icon {
+    &::before, &::after {
+        bottom: -55px;
+        right: 0;
+        width: 264px;
+        height: 254px;
+    }
+    &::before {
+        background: url(../img/moon.png) no-repeat center center / contain;
+    }
+    &::after {
+        background-color: #0F338C;
+        opacity: 0.8;
+    }
+}
+
+.night-title {
+    @extend .morning-title;
+    color: $white-clr;
+}
+
+.night-text {
+    color: $sub-white-clr;
+}
+
+.night-img {
+    margin-right: 30px;
+    margin-left: calc(50% - 50vw);
+}
+
+.night-btn {
+    @include btn(#97D3FA, $black-clr);
+    margin: 0;
+}

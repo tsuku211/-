@@ -1,29 +1,47 @@
 @use '../config/' as *;
 
 .header {
+    position: absolute;
+    width: 100%;
+    color: $white-clr;
+    @include z-index(header);
+}
 
-    &-inner {
+.header-inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    max-width: 1150px;
+}
 
-    }
+.header-logo {
+    padding-top: 20px;
+}
 
-    &-logo {
-
-        span {
-
-        }
-    }
+nav {
+    margin-left: auto;
 }
 
 .header-nav {
+    display: flex;
+    align-items: flex-end;
+}
 
-    &-item {
+.header-nav-item {
 
-        figure {
+    &:not(first-child) {
+        margin-left: 30px;
+    }
+    
+    figure {
+        width: 25px;
+        margin: 0 auto;
+    }
 
-        }
-
-        span {
-            
-        }
+    span {
+        display: block;
+        margin-top: 5px;
+        color: $white-clr;
+        letter-spacing: 0.02em;
     }
 }

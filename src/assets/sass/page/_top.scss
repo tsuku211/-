@@ -1,25 +1,83 @@
 @use '../config/' as *;
 
 .hero {
+    position: relative;
+    background-image: url(../img/hero01.png), url(../img/hero02.png);
+    background-position: left center, right center;
+    background-size: 50%, 50%;
+    background-repeat: no-repeat, no-repeat;
+    aspect-ratio: 1440/760;
+}
 
-    &-text {
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-        p {
+    p {
+        color: $white-clr;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
 
-        }
-
-        span {
-
-        }
+    span {
+        display: inline-block;
+        margin-top: 15px;
+        font-size: 64px;
     }
 }
 
 .hero-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+}
 
-    &-item {
+.hero-list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+    padding-left: 70px;
+    color: $white-clr;
+    font-size: 16px;
+    font-weight: 700;
+    backdrop-filter: blur(10px); //背景ぼかし
 
-        span {
+    span {
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 24px;
+    }
 
+    &:first-child {
+        &::before {
+            width: 20px;
+            height: 20px;
+            background: url(../img/hero-icon01.png) no-repeat center center / contain;
         }
+    }
+
+    &:last-child {
+        &::before {
+            width: 20px;
+            height: 17px;
+            background: url(../img/hero-icon02.png) no-repeat center center / contain;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
     }
 }

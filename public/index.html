@@ -6,35 +6,40 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>あいぼう水族館</title>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+	<!-- google fonts -->
 	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
 <body>
 	<header class="header">
 		<div class="inner header-inner">
-			<h1 class="header-logo"><span>あいぼう水族館gitのテストです</span></h1>
+			<h1 class="header-logo logo"><a href=""><span>あいぼう水族館</span></a></h1>
 			<nav>
 				<ul class="header-nav">
-					<li class="header-nav-item">
-						<figure><img src="" alt=""></figure>
-						<span>お知らせ</span>
-					</li><!-- /.header-nav-item -->
-					<li class="header-nav-item">
-						<figure><img src="" alt=""></figure>
-						<span>イベント</span>
-					</li><!-- /.header-nav-item -->
-					<li class="header-nav-item">
-						<figure><img src="" alt=""></figure>
-						<span>料金・チケット</span>
-					</li><!-- /.header-nav-item -->
-					<li class="header-nav-item">
-						<figure><img src="" alt=""></figure>
-						<span>フロアマップ</span>
-					</li><!-- /.header-nav-item -->
-					<li class="header-nav-item">
-						<figure><img src="" alt=""></figure>
-						<span>アクセス</span>
-					</li><!-- /.header-nav-item -->
+					<li class="header-nav-item"><a href="#">
+							<figure><img src="./assets/img/nav-news.png" alt="お知らせアイコン"></figure>
+							<span>お知らせ</span>
+						</a></li><!-- /.header-nav-item -->
+					<li class="header-nav-item"><a href="#">
+							<figure><img src="./assets/img/nav-event.png" alt="イベントアイコン"></figure>
+							<span>イベント</span>
+						</a></li><!-- /.header-nav-item -->
+					<li class="header-nav-item"><a href="#">
+							<figure><img src="./assets/img/nav-ticket.png" alt="チケットアイコン"></figure>
+							<span>料金・チケット</span>
+						</a></li><!-- /.header-nav-item -->
+					<li class="header-nav-item"><a href="#">
+							<figure><img src="./assets/img/nav-map.png" alt="フロアマップアイコン"></figure>
+							<span>フロアマップ</span>
+						</a></li><!-- /.header-nav-item -->
+					<li class="header-nav-item"><a href="#">
+							<figure><img src="./assets/img/nav-access.png" alt="アクセスアイコン"></figure>
+							<span>アクセス</span>
+						</a></li><!-- /.header-nav-item -->
 				</ul><!-- /.header-nav -->
 			</nav>
 		</div><!-- /.header-inner -->
@@ -45,73 +50,161 @@
 			<p>2度楽しめる<br><span>朝と夜で別世界</span></p>
 		</div><!-- /.hero-text -->
 		<ul class="hero-list">
-			<li class="hero-list-item">
-				本日の営業時間<span>10:00〜21:00</span>
-			</li><!-- /.hero-list-item -->
-			<li class="hero-list-item">
-				新型コロナウイルスについて
-			</li><!-- /.hero-list-item -->
+			<li class="hero-list-item"><a href="">
+					本日の営業時間<span>10:00〜21:00</span>
+				</a></li><!-- /.hero-list-item -->
+			<li class="hero-list-item"><a href="">
+					新型コロナウイルスについて
+				</a></li><!-- /.hero-list-item -->
 		</ul><!-- /.hero-list -->
 	</div><!-- /.hero -->
 
 	<section class="news">
-		<div class="inner">
-			<h2 class="news-title title">お知らせ</h2><!-- /.news-title title -->
-		</div><!-- /.inner -->
+		<div class="news-bg-icon bg-icon">
+			<div class="inner">
+				<h2 class="news-title title">お知らせ</h2><!-- /.news-title title -->
+				<ul class="news-list">
+					<li class="news-item"><a href="#">
+							<time datetime="2022-04-05">2022.04.05</time>
+							<span class="news-item-tag tag">お知らせ</span><!-- /.news-item-tag -->
+							<h3 class="news-item-title">サイトのリニューアルについて</h3><!-- /.news-item-title -->
+						</a></li><!-- /.news-list-item -->
+					<li class="news-item"><a href="#">
+							<time datetime="2022-04-02">2022.04.02</time>
+							<span class="news-item-tag tag">お知らせ</span><!-- /.news-item-tag -->
+							<h3 class="news-item-title">新型コロナウイルス感染症対策について</h3><!-- /.news-item-title -->
+						</a></li><!-- /.news-list-item -->
+					<li class="news-item"><a href="#">
+							<time datetime="2022-01-01">2022.01.01</time>
+							<span class="news-item-tag tag">お知らせ</span><!-- /.news-item-tag -->
+							<h3 class="news-item-title">あけましておめでとうございます。今年もよろしくお願いします！</h3><!-- /.news-item-title -->
+						</a></li><!-- /.news-list-item -->
+				</ul><!-- /.news-list -->
+				<div class="btn">
+					<a href="#" class="news-btn">お知らせ一覧</a>
+				</div><!-- /.btn -->
+			</div><!-- /.inner -->
+		</div><!-- /.news-bg-icon -->
 	</section><!-- /.news -->
 
 	<section class="event">
-		<div class="inner">
-			<h2 class="event-title title">イベント</h2><!-- /.event-title title -->
-			<ul class="event-list">
-				<li class="event-list-item">
-					<figure><img src="" alt=""></figure>
-					<div>
-						<h3>【一番人気】シャチショー</h3>
-						<p>あいぼう水族館で一番人気のシャチのジョー君!3m近くジャンプする姿は大迫力!<br>
-							開催時間：月・水・金曜日　12:00/15:00</p>
-					</div>
-				</li><!-- /.event-list-item -->
-				<li class="event-list-item">
-					<figure><img src="" alt=""></figure>
-					<div>
-						<h3>【6月限定】カピパラふれあい</h3>
-						<p>げっ歯類の中でも一番大きな体を持つカピパラ。カピパラの毛はすごく太くてガサガサしています。カピパラと触れ合ってみてね!<br>
-							開催時間：毎日　10:00~15:00(12時から1時間休憩) エサ代:100円（税込み）</p>
-					</div>
-				</li><!-- /.event-list-item -->
-			</ul><!-- /.event-list -->
-		</div><!-- /.inner -->
+		<div class="event-bg-icon bg-icon">
+			<span>
+				<div class="inner">
+					<h2 class="event-title title">イベント</h2><!-- /.event-title title -->
+					<ul class="event-list">
+						<li class="event-item">
+							<figure><img src="./assets/img/event01.jpg" alt="シャチショー"></figure>
+							<div class="event-item-contents">
+								<h3>【一番人気】シャチショー</h3>
+								<p>あいぼう水族館で一番人気のシャチのジョー君!3m近くジャンプする姿は大迫力!<br>
+									開催時間：月・水・金曜日　12:00/15:00</p>
+							</div>
+						</li><!-- /.event-item -->
+						<li class="event-item">
+							<figure><img src="./assets/img/event02.png" alt="カピパラ"></figure>
+							<div class="event-item-contents">
+								<h3>【6月限定】カピパラふれあい</h3>
+								<p>げっ歯類の中でも一番大きな体を持つカピパラ。カピパラの毛はすごく太くてガサガサしています。カピパラと触れ合ってみてね!<br>
+									開催時間：毎日　10:00~15:00(12時から1時間休憩) エサ代:100円（税込み）</p>
+							</div>
+						</li><!-- /.event-item -->
+					</ul><!-- /.event-list -->
+				</div><!-- /.inner -->
+			</span>
+		</div><!-- /.event-bg-icon bg-icon -->
 	</section><!-- /.event -->
 
 	<section class="morning">
-		<div class="inner">
-			<div class="flex-left">
-				<h2 class="morning-title title">朝のあいぼう水族館</h2><!-- /.morning-title title -->
-				<p class="text">子供連れのご家族に、ぴったりの朝の水族館!<br>
-					一番人気のシャチショーのジャンプする姿は大迫力で、お子様にも大人気です。
-					<span>朝だけのイベントや生き物をお楽しみください！</span>
-				</p>
-				<div class="btn morning-btn"><a href="">もっと見る</a></div><!-- /.morning-btn -->
-			</div><!-- /.flex-left -->
-			<div class="flex-right"><img src="" alt=""></div><!-- /.flex-right -->
-		</div><!-- /.inner -->
+		<div class="morning-bg-icon bg-icon">
+			<div class="inner d-flex">
+				<div class="flex-left">
+					<h2 class="morning-title title">朝のあいぼう水族館</h2><!-- /.morning-title title -->
+					<p class="morning-text text">子供連れのご家族に、ぴったりの朝の水族館!<br>
+						一番人気のシャチショーのジャンプする姿は大迫力で、お子様にも大人気です。
+						<span>朝だけのイベントや生き物をお楽しみください！</span>
+					</p>
+					<div class="btn"><a href="#" class="morning-btn">もっと見る</a></div><!-- /.morning-btn -->
+				</div><!-- /.flex-left -->
+				<div class="morning-img flex-right"><img src="./assets/img/morning.png" alt="シャチショー"></div><!-- /.flex-right -->
+			</div><!-- /.inner -->
+		</div><!-- /.morning-bg-icon bg-icon -->
 	</section><!-- /.morning -->
 
 	<section class="night">
-		<div class="inner">
-			<div class="flex-left"><img src="" alt=""></div><!-- /.flex-left -->
-			<div class="flex-right">
-				<h2 class="night-title title">夜のあいぼう水族館</h2><!-- /.night-title title -->
-				<p class="text">デートに、ぴったりの夜の水族館!<br>
-					一番人気の海中トンネルは、まるで海を覗いているような不思議な感覚を楽しめます。
-					このトンネルでは、40種類以上の魚を見ることができます。
-					<span>夜だけのイベントや生き物をお楽しみください!</span>
-				</p><!-- /.text -->
-				<div class="btn night-btn"><a href="">もっと見る</a></div><!-- /.btn night-btn -->
-			</div><!-- /.flex-right -->
-		</div><!-- /.inner -->
+		<div class="night-bg-icon bg-icon">
+			<div class="inner d-flex">
+				<div class="night-img flex-left"><img src="./assets/img/night.jpg" alt="水のトンネル"></div><!-- /.flex-left -->
+				<div class="flex-right">
+					<h2 class="night-title title">夜のあいぼう水族館</h2><!-- /.night-title title -->
+					<p class="night-text text">デートに、ぴったりの夜の水族館!<br>
+						一番人気の海中トンネルは、まるで海を覗いているような不思議な感覚を楽しめます。
+						このトンネルでは、40種類以上の魚を見ることができます。
+						<span>夜だけのイベントや生き物をお楽しみください!</span>
+					</p><!-- /.text -->
+					<div class="btn"><a href="#" class="night-btn">もっと見る</a></div><!-- /.btn night-btn -->
+				</div><!-- /.flex-right -->
+			</div><!-- /.inner -->
+		</div><!-- /.night-bg-icon bg-icon -->
 	</section><!-- /.night -->
+
+	<section class="creatures">
+		<div class="inner">
+			<div class="creatures-contents">
+				<h2 class="creatures-title title">あいぼうの生き物たち</h2><!-- /.creatures-title title -->
+				<ul class="creatures-list">
+					<li class="creatures-item"><img src="./assets/img/creatures01.png" alt="カクレクマノミ"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures02.png" alt="イルカ"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures03.png" alt="ピンクの魚"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures04.png" alt="ペンギン"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures05.png" alt="青い魚"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures06.png" alt="カピパラ"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures07.png" alt="赤い魚"></li><!-- /.creatures-item -->
+					<li class="creatures-item"><img src="./assets/img/creatures08.png" alt="亀"></li><!-- /.creatures-item -->
+				</ul><!-- /.creatures-list -->
+				<div class="btn"><a href="" class="creatures-btn">詳しく見る</a><!-- /.creatures-btn -->
+				</div><!-- /.btn -->
+			</div><!-- /.creatures-contents -->
+		</div><!-- /.inner -->
+	</section><!-- /.creatures -->
+
+	<section class="instagram">
+		<div class="instagram-bg-icon bg-icon">
+			<div class="inner">
+				<h2 class="instagram-title title">みんなの＃あいぼう水族館</h2><!-- /.instagram-title title -->
+				<p class="instagram-text">あなただけの素敵な写真をお待ちしております！<br>お気に入りのシーンを「&#9839;あいぼう水族館」をつけてアップしましょう。</p><!-- /.instagram-text -->
+				<ul class="instagram-list">
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta01.png" alt="ペンギン"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta02.png" alt="水のトンネル"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta03.png" alt="クラゲ"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta04.png" alt="水槽"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta05.png" alt="魚"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta06.png" alt="シャチショー"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta07.png" alt="カクレクマノミ"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta08.png" alt="クラゲ"></a></li><!-- /.instagram-item -->
+					<li class="instagram-item"><a href="#"><img src="./assets/img/insta09.png" alt="サメ"></a></li><!-- /.instagram-item -->
+				</ul><!-- /.instagram-list -->
+				<div class="btn"><a href="" class="instagram-btn">instagramで見る</a><!-- /.instagram-btn -->
+				</div><!-- /.btn -->
+			</div><!-- /.inner -->
+		</div><!-- /.instagram-bg-icon bg-icon -->
+	</section><!-- /.instagram -->
+
+	<footer class="footer">
+		<div class="footer-bg-icon bg-icon"><span>
+				<div class="inner footer-inner">
+					<p class="footer-logo logo"><a href="#"><span>あいぼう水族館</span></a></p><!-- /.footer-logo -->
+					<ul class="footer-list">
+						<li class="footer-list-item"><a href="">お知らせ</a></li><!-- /.footer-list-item -->
+						<li class="footer-list-item"><a href="">イベント</a></li><!-- /.footer-list-item -->
+						<li class="footer-list-item"><a href="">料金・チケット</a></li><!-- /.footer-list-item -->
+						<li class="footer-list-item"><a href="">フロアマップ</a></li><!-- /.footer-list-item -->
+						<li class="footer-list-item"><a href="">アクセス</a></li><!-- /.footer-list-item -->
+					</ul><!-- /.footer-list -->
+				</div><!-- /.inner -->
+				<small class="copyright">&copy; 2022 マンツーマンスクール王子</small>
+			</span></div><!-- /.footer-bg-icon bg-icon -->
+	</footer><!-- /.footer -->
 </body>
 
 </html>

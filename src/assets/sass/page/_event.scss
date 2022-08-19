@@ -1,0 +1,74 @@
+@use '../config/' as *;
+
+.event {
+    padding-top: 70px;
+    padding-bottom: 23vw;
+    background-color: #D4EEFF;
+}
+
+.event-bg-icon {
+    &::before {
+        top: 36%;
+        left: 110px;
+        width: 126px;
+        height: 128px;
+        background: url(../img/event-bg-icon01.png) no-repeat center center / contain;
+    }
+    &::after {
+        bottom: -80px;
+        left: 66px;
+        width: 150px;
+        height: 150px;
+        background: url(../img/event-bg-icon03.png) no-repeat center center / contain;
+    }
+
+    span {
+        &::before {
+            top: 15%;
+            right: 50px;
+            width: 180px;
+            height: 180px;
+            background: url(../img/event-bg-icon02.png) no-repeat center center / contain;
+        }
+        &::after {
+            bottom: 3%;
+            right: 10px;
+            width: 170px;
+            height: 170px;
+            background: url(../img/event-bg-icon04.png) no-repeat center center / contain;
+        }
+    }
+}
+
+.event-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.event-item {
+    width: 375px;
+    background-color: $white-clr;
+    &:last-child {
+        margin-left: 30px;
+    }
+
+    figure {
+        width: 100%;
+    }
+}
+
+.event-item-contents {
+    padding: 20px;
+
+    h3 {
+        color: $sub-black-clr;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    p {
+        margin-top: 15px;
+        line-height: 26px;
+    }
+}

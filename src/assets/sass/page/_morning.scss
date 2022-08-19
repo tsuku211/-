@@ -1,0 +1,48 @@
+@use '../config/' as *;
+
+.morning {
+    position: relative;
+    padding-bottom: 120px;
+    background-color: #97D3FA;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        height: 16.5vw;
+        background: url(../img/morning-wave.png) no-repeat center center / cover;
+    }
+}
+
+.morning-bg-icon {
+    &::before, &::after {
+        top: -170px;
+        left: 38px;
+        width: 250px;
+        height: 237px;
+    }
+    &::before {
+        background: url(../img/sun.png) no-repeat center center / contain;
+    }
+    &::after {
+        background-color: #97D3FA;
+        opacity: 0.8;
+    }
+}
+
+.morning-title {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.morning-img {
+    margin-left: 30px;
+    margin-right: calc(50% - 50vw);
+}
+
+.morning-btn {
+    @include btn(#0F338C);
+    margin: 0;
+}

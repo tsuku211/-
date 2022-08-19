@@ -1,7 +1,18 @@
 @use '../config/' as *;
 
 body {
-    
+    color: $black-clr;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.inner {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: content-box;
 }
 
 .btn {
@@ -9,5 +20,82 @@ body {
 }
 
 .text {
+    width: 465px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 26px;
 
+    span {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+.title {
+    @include title();
+}
+
+.tag {
+    @include tag();
+}
+
+
+%bg-icon {
+    content: "";
+    position: absolute;
+    display: inline-block;
+}
+.bg-icon {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &::before {
+       @extend %bg-icon;
+    }
+
+    &::after {
+        @extend %bg-icon;
+    }
+
+    span {
+        position: relative;
+
+        &::before {
+            @extend %bg-icon;
+        }
+
+        &::after {
+            @extend %bg-icon;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    span {
+        position: relative;
+        padding-top: 20px;
+        padding-right: 20px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            right: 0;
+            width: 45px;
+            height: 30px;
+            background: url(../img/logo.png) no-repeat center center / contain;
+        }
+    }
+}
+
+.d-flex {
+    display: flex;
 }

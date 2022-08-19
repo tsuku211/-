@@ -1,0 +1,51 @@
+@use '../config/' as *;
+
+.news {
+    padding-top: 70px;
+    background-color: #D4EEFF;
+}
+
+.news-bg-icon {
+
+    &::before {
+        top: -30px;
+        left: 127px;
+        width: 61px;
+        height: 114px;
+        background: url(../img/news-bg-icon.png) no-repeat center center / contain;
+    }
+}
+
+.news-list {
+    margin-top: 50px;
+}
+
+.news-item {
+    border-bottom: 1px solid #BDBDBD;
+    transition: box-shadow 0.2s;
+    &:first-child {
+        border-top: 1px solid #bdbdbd;
+    }
+    &:hover {
+        box-shadow: 1px 1px 3px grey;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        padding: 15px 0 15px 50px;
+    }
+}
+
+.news-item-tag {
+    margin-left: 30px;
+}
+
+.news-item-title {
+    width: calc(100% - (84px + 135px + 80px));
+    margin-left: 50px;
+}
+
+.news-btn {
+  @include btn();
+}
